@@ -1,7 +1,7 @@
 name: EB deploy
 on:
   push:
-    branches: [ master ]
+    branches: main
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -21,4 +21,4 @@ jobs:
           pip install awsebcli
       - name: Deploy to Elastic Beanstalk
         run: |
-          eb deploy
+          eb deploy Gittest-env
