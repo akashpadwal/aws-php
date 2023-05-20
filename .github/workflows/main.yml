@@ -8,7 +8,7 @@
 #---------------------------------------------------------------------
 name: CI-CD-Pipeline-to-AWS-ElasticBeanstalk
 env:
-  EB_PACKAGE_S3_BUCKET_NAME : "zzz.flask-app"
+  EB_PACKAGE_S3_BUCKET_NAME : "elasticbeanstalk-us-east-1-925653724403"
   EB_APPLICATION_NAME       : "gittest"
   EB_ENVIRONMENT_NAME       : "Gittest-env"
   DEPLOY_PACKAGE_NAME       : "git-test-${{ github.sha }}.zip"
